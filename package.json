@@ -2,6 +2,7 @@
 	"name": "advent-of-code",
 	"version": "1.0.0",
 	"description": "JavaScript Solutions to Advent of Code puzzles (adventofcode.com)",
+	"type": "module",
 	"repository": {
 		"type": "git",
 		"url": "git+https://github.com/JoniJo06/advent-of-code.git"
