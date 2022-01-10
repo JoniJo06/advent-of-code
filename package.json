@@ -1,0 +1,25 @@
+{
+	"name": "advent-of-code",
+	"version": "1.0.0",
+	"description": "JavaScript Solutions to Advent of Code puzzles (adventofcode.com)",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/JoniJo06/advent-of-code.git"
+	},
+	"keywords": [
+		"aoc",
+		"puzzles"
+	],
+	"engines": {
+		"node": ">=16.13.1"
+	},
+	"author": "JoniJo06",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/JoniJo06/advent-of-code/issues"
+	},
+	"homepage": "https://github.com/JoniJo06/advent-of-code#readme",
+	"dependencies": {
+		"fs-extra": "^10.0.0"
+	}
+}
