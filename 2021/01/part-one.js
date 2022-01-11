@@ -2,12 +2,16 @@
 
 import fs from 'fs-extra';
 
-const input = fs.readFileSync('./input.txt').toString();
+const rawInput = fs.readFileSync('./input2.txt').toString();
 
-const formatInput = input.split('\r\n');
+const input = rawInput.split('\r\n').map(Number);
 
-let increments = 1;
-for (let i = 0; i < formatInput.length; i++) {
-	if (formatInput[i] > formatInput[i - 1]) increments++;
+let count = 0;
+
+for (let i = 0; i < input.length; i++) {
+	if (input[i] > input[i - 1]) {
+		count++;
+	}
 }
-console.log(increments);
+
+console.log(count);
