@@ -5,7 +5,8 @@ import fs from 'fs-extra';
 
 const rawInput = fs.readFileSync('./input.txt').toString();
 
-const input = rawInput.split('\r\n').map(Number);
+const input = rawInput.split(`
+`).map(Number);
 
 let count = 0;
 

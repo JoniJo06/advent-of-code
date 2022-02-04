@@ -1,11 +1,9 @@
-/** @format */
-'use strict';
-
 import fs from 'fs-extra';
 
 const rawInput = fs.readFileSync('./input.txt').toString();
 
-const input = rawInput.split('\r\n');
+const input = rawInput.split(`
+`);
 
 const gamma = [];
 const epsilon = [];

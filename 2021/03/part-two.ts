@@ -6,7 +6,8 @@ import fs from 'fs-extra';
 
 const rawInput = fs.readFileSync('./input.txt').toString();
 
-const input = rawInput.split('\n');
+const input = rawInput.split(`
+`);
 
 let oxy = [...input];
 let co2 = [...input];

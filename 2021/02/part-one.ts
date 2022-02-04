@@ -5,7 +5,8 @@ import fs from 'fs-extra';
 
 const rawInput = fs.readFileSync('./input.txt').toString();
 
-const input = rawInput.split('\r\n');
+const input = rawInput.split(`
+`);
 
 const instruction1 = input.map((el) => {
 	return el.split(' ')[0].toLowerCase();
