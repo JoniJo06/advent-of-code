@@ -1,5 +1,3 @@
-/** @format */
-'use strict';
 import fs from 'fs-extra';
 
 const rawInput = fs.readFileSync('./input2.txt').toString();

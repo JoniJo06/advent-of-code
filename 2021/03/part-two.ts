@@ -1,19 +1,21 @@
 /** @format */
 
+'use strict';
+
+import fs from 'fs-extra';
+
 const rawInput = fs.readFileSync('./input.txt').toString();
 
-const input = rawInput.split('\r\n');
+const input = rawInput.split('\n');
 
 let oxy = [...input];
 let co2 = [...input];
+const getMinsMaxes = (lines: string[]) => {
+	let count = [];
 
-const getMinsMaxes = (lines) => {
-	let count = {};
-
-           for (let line of lines) {
+	for (let line of lines) {
 		for (let i = 0; i < line.length; i++) {
 			if (!count[i]) {
-				// Initialize [zeros_count, ones_count]
 				count[i] = [0, 0];
 			}
 
