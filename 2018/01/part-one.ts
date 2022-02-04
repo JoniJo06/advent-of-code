@@ -5,9 +5,9 @@ const rawInput = fs.readFileSync('./input.txt')
 const input = rawInput.split(`
 `);
 
-let result = 0;
+let frequency = 0;
 
 for (let i = 0; i < input.length; i++)
-  result = eval(`${result}${input[i]}`);
+  frequency = eval(`${frequency}${input[i]}`);
 
-console.log(result);
+console.log(frequency);
