@@ -4,7 +4,7 @@ const rawInput = fs.readFileSync('./input.txt')
   .toString();
 const input = rawInput.split(`
 `)
-  .map(el => Number(el));
+  .map(Number);
 
 for (let i = 0; i < input.length; i++) {
   for (let j = i + 1; j < input.length; j++) {
