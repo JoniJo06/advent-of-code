@@ -22,22 +22,6 @@ export class claim {
     this._height = height;
   }
 
-  get left() {
-    return this._left;
-  }
-
-  get top() {
-    return this._top;
-  }
-
-  get width() {
-    return this._width;
-  }
-
-  get height() {
-    return this._height;
-  }
-
   static get height() {
     return claim.HEIGHT;
   }

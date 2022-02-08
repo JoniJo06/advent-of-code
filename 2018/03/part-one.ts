@@ -1,13 +1,6 @@
 import fs from 'fs-extra';
 import { claim } from './claim';
 
-// type ClaimType = {
-//   left: number
-//   top: number
-//   width: number
-//   height: number
-// }
-
 const rawInput = fs.readFileSync('./input.txt')
   .toString();
 const input = rawInput.split(`
@@ -25,8 +18,6 @@ for (let i = 0; i < claim.height; i++) {
   for (let j = 0; j < claim.width; j++) {
     let count = 0;
     for (let k = 0; k < input.length; k++) {
-      // console.log(input[k].getInfo(j, i));
-      // console.log(count);
       if (input[k].getInfo(i + 1, j + 1) === '#')
         count++;
     }
