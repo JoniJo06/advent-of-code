@@ -1,6 +1,6 @@
 import fs from 'fs-extra';
 
-const rawInput = fs.readFileSync('./input.txt')
+const rawInput = fs.readFileSync('../input.txt')
   .toString();
 const input = rawInput.split(',')
   .map(Number);
@@ -18,4 +18,3 @@ for (let i = 0; i < input.length; i += 4) {
 
 }
 console.log(input[0]);
-
