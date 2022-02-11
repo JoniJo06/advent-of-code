@@ -25,10 +25,8 @@ fn main() {
         _i3 = input[i + 3] as usize;
         if input[i] == 1 {
             input[_i3] = input[_i1] + input[_i2];
-            // println!("{}", 1);
         } else if input[i] == 2 {
             input[_i3] = input[_i1] * input[_i2];
-            // println!("{}", 2);
         } else if input[i] == 99 {
             break;
         }
