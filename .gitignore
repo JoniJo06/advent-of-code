@@ -6,3 +6,4 @@ bin/
 *.o
 *.hi
 node_modules/
+randomLanguage.ts
